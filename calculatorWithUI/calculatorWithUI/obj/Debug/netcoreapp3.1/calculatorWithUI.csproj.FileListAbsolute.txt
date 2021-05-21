@@ -1,0 +1,15 @@
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\bin\Debug\netcoreapp3.1\calculatorWithUI.exe
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\bin\Debug\netcoreapp3.1\calculatorWithUI.deps.json
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\bin\Debug\netcoreapp3.1\calculatorWithUI.runtimeconfig.json
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\bin\Debug\netcoreapp3.1\calculatorWithUI.runtimeconfig.dev.json
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\bin\Debug\netcoreapp3.1\calculatorWithUI.dll
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\bin\Debug\netcoreapp3.1\calculatorWithUI.pdb
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.csprojAssemblyReference.cache
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.Form1.resources
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.csproj.GenerateResource.cache
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.AssemblyInfoInputs.cache
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.AssemblyInfo.cs
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.csproj.CoreCompileInputs.cache
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.dll
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.pdb
+C:\Users\Eric Yuan\Desktop\CalculatorConsole\calculatorWithUI\calculatorWithUI\obj\Debug\netcoreapp3.1\calculatorWithUI.genruntimeconfig.cache

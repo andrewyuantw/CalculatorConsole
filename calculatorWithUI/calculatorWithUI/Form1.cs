@@ -18,6 +18,8 @@ namespace calculatorWithUI
         double total = 0.0;
         string input = "";
         Boolean newInput = true;
+        Boolean divideByZero = false;
+        Boolean keepGivingError = false;
 
         public Form1()
         {
@@ -29,7 +31,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "1";
             textBox1.Text += "1";
@@ -40,7 +44,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "2";
             textBox1.Text += "2";
@@ -51,7 +57,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "3";
             textBox1.Text += "3";
@@ -62,7 +70,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "4";
             textBox1.Text += "4";
@@ -73,7 +83,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "5";
             textBox1.Text += "5";
@@ -84,7 +96,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "6";
             textBox1.Text += "6";
@@ -95,7 +109,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "7";
             textBox1.Text += "7";
@@ -106,7 +122,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "8";
             textBox1.Text += "8";
@@ -117,7 +135,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "9";
             textBox1.Text += "9";
@@ -128,7 +148,9 @@ namespace calculatorWithUI
             if (newInput)
             {
                 textBox1.Text = "";
+                input = "";
                 newInput = false;
+                divideByZero = false;
             }
             input += "0";
             textBox1.Text += "0";
@@ -137,6 +159,13 @@ namespace calculatorWithUI
         private void equals_Click(object sender, EventArgs e)
         {
             b = Int32.Parse(input);
+            if (keepGivingError)
+            {
+                textBox1.Text = "Can't divide by zero";
+                divideByZero = true;
+                newInput = true;
+                return;
+            }
             switch (operation)
             {
                 case "+" :
@@ -161,6 +190,8 @@ namespace calculatorWithUI
                     if (b == 0)
                     {
                         textBox1.Text = "Can't divide by zero";
+                        newInput = true;
+                        divideByZero = true;
                     } else
                     {
                         total = a / b;
@@ -175,6 +206,7 @@ namespace calculatorWithUI
 
         private void add_Click(object sender, EventArgs e)
         {
+            keepGivingError = (divideByZero) ? true : false;
             a = Double.Parse(input);
             operation = "+";
             input = "";
@@ -183,6 +215,8 @@ namespace calculatorWithUI
 
         private void subtract_Click(object sender, EventArgs e)
         {
+            keepGivingError = (divideByZero) ? true : false;
+            
             a = Double.Parse(input);
             operation = "-";
             input = "";
@@ -191,6 +225,7 @@ namespace calculatorWithUI
 
         private void multiply_Click(object sender, EventArgs e)
         {
+            keepGivingError = (divideByZero) ? true : false;
             a = Double.Parse(input);
             operation = "*";
             input = "";
@@ -199,11 +234,11 @@ namespace calculatorWithUI
 
         private void divide_Click(object sender, EventArgs e)
         {
+            keepGivingError = (divideByZero) ? true : false;
             a = Double.Parse(input);
             operation = "/";
             input = "";
             newInput = true;
-
         }
 
 

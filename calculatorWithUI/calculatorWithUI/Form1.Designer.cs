@@ -46,6 +46,7 @@ namespace calculatorWithUI
             this.divide = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.resultBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // one
@@ -184,7 +185,7 @@ namespace calculatorWithUI
             this.equals.Name = "equals";
             this.equals.Size = new System.Drawing.Size(112, 34);
             this.equals.TabIndex = 13;
-            this.equals.Text = "=";
+            this.equals.Text = "back";
             this.equals.UseVisualStyleBackColor = true;
             this.equals.Click += new System.EventHandler(this.equals_Click);
             // 
@@ -209,16 +210,24 @@ namespace calculatorWithUI
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 76);
+            this.textBox1.Location = new System.Drawing.Point(82, 33);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(645, 31);
             this.textBox1.TabIndex = 16;
+            // 
+            // resultBox
+            // 
+            this.resultBox.Location = new System.Drawing.Point(82, 94);
+            this.resultBox.Name = "resultBox";
+            this.resultBox.Size = new System.Drawing.Size(645, 31);
+            this.resultBox.TabIndex = 17;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.resultBox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.divide);
@@ -263,6 +272,7 @@ namespace calculatorWithUI
         private System.Windows.Forms.Button divide;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox resultBox;
     }
 }
 
